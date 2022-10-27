@@ -1,0 +1,46 @@
+import {BRAND_NAME} from "../../lib/config";
+import {SectionPageLayout} from "../../components/layouts/SectionPageLayout";
+export const siteSubMenu = [
+  {
+    eventKey: "guides",
+    content: "Guides",
+    subItems: [
+      {
+        eventKey: "myself",
+        content: "Collecting for Myself",
+        href: "/guides/myself",
+      },
+      {
+        eventKey: "others",
+        content: "Collecting for Others",
+        href: "/guides/others",
+      },
+    ],
+  },
+];
+export const meta = {
+  title: `Guides`,
+  dummy: `${BRAND_NAME}`,
+}
+
+# Guides
+
+{BRAND_NAME} helps citizens and businesses in Singapore to create uplift for all.
+
+Check out our helpful articles to learn more about our programmes and community support.
+
+## Before you start
+
+1. Sign up for SingPass
+
+2. Update your address
+
+## What's Next?
+
+Here are two simple guides to get you started:
+
+1. [Collecting for Myself](/guides/myself)
+2. [Collecting for Others](/guides/others)
+
+export default ({children}) => <SectionPageLayout sideNavigationMenu={siteSubMenu}
+                                                  meta={meta}>{children}</SectionPageLayout>

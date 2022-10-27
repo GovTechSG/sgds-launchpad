@@ -1,0 +1,31 @@
+h1 {
+    padding-top: 2rem
+}
+
+h2 {
+    padding-top: 1.5rem
+}
+
+h3 {
+    padding-top: 1rem
+}
+
+h4 {
+    padding-top: 0.5rem
+}
+
+h5 {
+    padding-top: 0.5rem
+}
+
+h6 {
+    padding-top: 0.5rem
+}
+
+.section {
+}
+
+.has-background-gradient {
+    background: linear-gradient(30deg, #00c9a0 0%, #4675d3 100%);
+    color: white;
+}
