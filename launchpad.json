@@ -1,0 +1,7 @@
+{
+  "name": "sgds-landingpage",
+  "framework": "nextjs",
+  "scripts": {
+    "start": "next start"
+  }
+}
