@@ -1,19 +1,17 @@
-import {SessionProvider} from "next-auth/react"
-import type {AppProps} from 'next/app'
-import '@govtechsg/sgds/css/sgds.css';
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import '../public/App.css'
-import '@govtechsg/sgds-masthead/dist/sgds-masthead/sgds-masthead.css';
-import {SgdsMasthead} from "@govtechsg/sgds-masthead-react"
-import {Session} from "next-auth";
+import type { AppProps } from "next/app";
+import "@govtechsg/sgds/css/sgds.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "../public/App.css";
+import "@govtechsg/sgds-masthead/dist/sgds-masthead/sgds-masthead.css";
+import { SgdsMasthead } from "@govtechsg/sgds-masthead-react";
 
-function MyApp({Component, pageProps: {session, ...pageProps}}: AppProps<{ session: Session }>) {
+function MyApp({ Component, pageProps: { ...pageProps } }: AppProps) {
   return (
-    <SessionProvider session={session}>
-      <SgdsMasthead/>
-      <Component {...pageProps}/>
-    </SessionProvider>
-  )
+    <>
+      <SgdsMasthead fluid />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
