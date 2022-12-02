@@ -17,7 +17,7 @@ export const TopMainNavigationBar = (props: TopMainNavigationBarProps) => {
   const { brandName, ...selectedProps } = props;
   return (
     <Navbar {...selectedProps} className='py-2'>
-      <Link href='/'>
+      <Link href='/' passHref>
         <Navbar.Brand>
           <img width={70} height={70} src={agencyLogo.src} alt='Home' />
         </Navbar.Brand>
@@ -27,28 +27,28 @@ export const TopMainNavigationBar = (props: TopMainNavigationBarProps) => {
         <div className='me-auto'></div>
         <Nav navbarScroll activeKey={active}>
           <Nav.Item>
-            <Link href='#'>
+            <Link href='#' passHref>
               <Nav.Link eventKey='nav1' onClick={() => clickNavbarItem("nav1")}>
                 Nav 1
               </Nav.Link>
             </Link>
           </Nav.Item>
           <Nav.Item>
-            <Link href='#'>
+            <Link href='#' passHref>
               <Nav.Link eventKey='nav2' onClick={() => clickNavbarItem("nav2")}>
                 Nav 2
               </Nav.Link>
             </Link>
           </Nav.Item>
           <Nav.Item>
-            <Link href='#'>
+            <Link href='#' passHref>
               <Nav.Link eventKey='nav3' onClick={() => clickNavbarItem("nav3")}>
                 Nav 3
               </Nav.Link>
             </Link>
           </Nav.Item>
           <Nav.Item>
-            <Link href='#'>
+            <Link href='#' passHref>
               <Nav.Link eventKey='nav4' onClick={() => clickNavbarItem("nav4")}>
                 Nav 4
               </Nav.Link>
