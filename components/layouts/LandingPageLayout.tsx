@@ -13,6 +13,7 @@ export const LandingPageLayout = (props: LandingPageLayoutProps) => {
     <>
       <main>
         <TopMainNavigationBar expand="lg" brandName={BRAND_NAME}/>
+        
         {props.children}
         <DefaultFooter />
       </main>
